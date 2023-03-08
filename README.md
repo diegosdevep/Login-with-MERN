@@ -3,10 +3,10 @@ Se necesitara variable de entorno en el frontend VITE_BACKEND_URL a http://local
 Se necesitara variable de entorno en backend 
 
 # variables para nodemailer
-EMAIL_USER
-EMAIL_PASS
-EMAIL_HOST
-EMAIL_PORT
+EMAIL_USER <br/>
+EMAIL_PASS<br/>
+EMAIL_HOST<br/>
+EMAIL_PORT<br/>
 
 #base de datos mongo DB compass
 MONGO_URI

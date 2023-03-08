@@ -5,11 +5,13 @@ import BotonForm from '../../components/Auth/BotonForm';
 import Input from '../../components/Auth/Input';
 import Label from '../../components/Auth/Label';
 import clienteAxios from '../../config/clienteAxios';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [alerta, setAlerta] = useState({});
+  const { setAuth } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +32,7 @@ const Login = () => {
 
       setAlerta({});
       localStorage.setItem('token', data.token);
+      setAuth(data);
     } catch (error) {
       setAlerta({
         msg: error.response.data.msg,

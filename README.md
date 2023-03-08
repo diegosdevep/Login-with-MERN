@@ -32,4 +32,5 @@ express <br/>
 moongose
 
 # Start project
-en produccion npm start -- en desarrollo npm run dev
+en produccion npm start <br/>
+en desarrollo npm run dev

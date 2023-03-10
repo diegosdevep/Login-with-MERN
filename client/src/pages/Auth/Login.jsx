@@ -11,6 +11,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [alerta, setAlerta] = useState({});
+  const navigate = useNavigate();
   const { setAuth } = useAuth();
 
   const handleSubmit = async (e) => {
@@ -33,6 +34,7 @@ const Login = () => {
       setAlerta({});
       localStorage.setItem('token', data.token);
       setAuth(data);
+      navigate('proyectos');
     } catch (error) {
       setAlerta({
         msg: error.response.data.msg,

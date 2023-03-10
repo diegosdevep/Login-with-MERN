@@ -5,7 +5,7 @@ const BotonForm = ({ type, title }) => {
     <input
       type={type}
       value={title}
-      className='bg-sky-700 w-full py-3 mb-5 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-sky-800 transition-colors'
+      className='bg-sky-700 w-full text-sm py-2 text-white font-bold rounded hover:cursor-pointer hover:bg-sky-800 transition-colors'
     />
   );
 };
